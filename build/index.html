@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Многопрофильная клиника | Ростов-на-Дону</title>
+		<link rel="stylesheet" href="./css/main.css" />
+
+		<link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg" />
+		<link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png" />
+	</head>
+
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="header__row">
+					<button class="mobile-nav-btn">
+						<div class="nav-icon"></div>
+					</button>
+
+					<div class="header__left">
+						<div class="logo">LOGO</div>
+
+						<div class="header__address">
+							<span>
+								<svg class="icon icon-placeholder">
+									<use href="./img/svgsprite/sprite.symbol.svg#placeholder"></use>
+								</svg>
+								Ростов-на-Дону
+							</span>
+							<span>ул.Ленина, 2Б</span>
+						</div>
+					</div>
+
+					<div class="header__right">
+						<div class="header__phone">
+							<picture>
+								<img src="./img/favicons/whatsapp-header.png" alt="whatsapp" />
+							</picture>
+							<span>+<a href="tel:+78630000000">7(863)000 00 00</a></span>
+							<span class="city">Ростов-на-Дону</span>
+						</div>
+
+						<button class="header__btn btn btn-primary" data-modal>
+							Записаться на&#160;приём
+						</button>
+					</div>
+				</div>
+			</div>
+			<nav class="header__nav nav">
+				<div class="container">
+					<ul class="nav__list">
+						<li><a href="#" class="active">О&#160;клинике</a></li>
+						<li><a href="#">Услуги</a></li>
+						<li><a href="#">Специалисты</a></li>
+						<li><a href="#">Цены</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<div class="mobile-nav">
+			<ul class="mobile-nav__list">
+				<li><a href="#" class="active">О&#160;клинике</a></li>
+				<li><a href="#">Услуги</a></li>
+				<li><a href="#">Специалисты</a></li>
+				<li><a href="#">Цены</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+			<button class="btn btn-nav" data-modal>Записаться на&#160;приём</button>
+		</div>
+
+		<main class="docs">
+			<section>
+				<div class="promo">
+					<div class="promo__img">
+						<!-- <picture>
+<source srcset="./img/promo-mobile.webp 1x, ./img/promo-mobile@2x.webp 2x" type="image/webp">
+<source srcset="./img/promo-mobile.jpg 1x, ./img/promo-mobile@2x.jpg 2x" type="image/jpeg">
+<img src="./img/promo-mobile.jpg" alt="clinic" />
+</picture> -->
+						<picture>
+							<source srcset="./img/promo.jpg" media="(min-width: 767.98px)" />
+							<img src="./img/promo-mobile.jpg" alt="clinic" />
+						</picture>
+					</div>
+					<div class="promo__info">
+						<div class="promo__wrap">
+							<h1 class="promo__title">Многопрофильная<br />клиника для&#160;детей и&#160;взрослых</h1>
+							<p class="promo__descr">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut&#160;labore et&#160;dolore magna aliqua
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="services__slider">
+				<div class="container">
+					<div class="services__slider-wrapper">
+						<div class="services__slider-inner">
+							<div class="services__slide">
+								<div class="slide-image">
+									<picture>
+										<source srcset="./img/doctor.jpg" media="(min-width: 767.98px)" />
+										<img src="./img/doctor-mobile.jpg" alt="doctor" />
+									</picture>
+								</div>
+								<div class="slide-content">
+									<div class="slide-overlay">
+										<picture>
+											<source srcset="./img/favicons/slider-overlay.webp 1x, ./img/favicons/slider-overlay@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/favicons/slider-overlay.png 1x, ./img/favicons/slider-overlay@2x.png 2x" type="image/png" />
+											<img src="./img/favicons/slider-overlay.png" alt="overlay" />
+										</picture>
+									</div>
+									<div class="content-checkup">
+										<h3>CHECK-UP</h3>
+										<span>для мужчин</span>
+										<ul class="check-list">
+											<li class="check-list-item">Гормональный скрининг</li>
+											<li class="check-list-item">Тестостерон</li>
+											<li class="check-list-item">Свободный тестостерон</li>
+											<li class="check-list-item">
+												Глобулин,&#160;связывающий&#160;половые гормоны
+											</li>
+										</ul>
+										<span class="price">Всего 2800₽</span>
+										<del>
+											<span>3500₽</span>
+										</del>
+									</div>
+									<div class="slide-btns">
+										<button class="btn btn-primary" data-modal>Записаться</button>
+										<button class="btn btn-ghost" data-modal>Подробнее</button>
+									</div>
+								</div>
+							</div>
+							<div class="services__slide">
+								<div class="slide-image">
+									<picture>
+										<source srcset="./img/doctor.jpg" media="(min-width: 767.98px)" />
+										<img src="./img/doctor-mobile.jpg" alt="doctor" />
+									</picture>
+								</div>
+								<div class="slide-content">
+									<div class="slide-overlay">
+										<picture>
+											<img src="./img/favicons/slider-overlay.png" alt="overlay" />
+										</picture>
+									</div>
+									<div class="content-checkup">
+										<h3>CHECK-UP</h3>
+										<span>для мужчин</span>
+										<ul class="check-list">
+											<li class="check-list-item">Гормональный скрининг</li>
+											<li class="check-list-item">Тестостерон</li>
+											<li class="check-list-item">Свободный тестостерон</li>
+											<li class="check-list-item">
+												Глобулин,&#160;связывающий&#160;половые гормоны
+											</li>
+										</ul>
+										<span class="price">Всего 2800₽</span>
+										<del>
+											<span>3500₽</span>
+										</del>
+									</div>
+									<div class="slide-btns">
+										<button class="btn btn-primary" data-modal>Записаться</button>
+										<button class="btn btn-ghost" data-modal>Подробнее</button>
+									</div>
+								</div>
+							</div>
+							<div class="services__slide">
+								<div class="slide-image">
+									<picture>
+										<source srcset="./img/doctor.jpg" media="(min-width: 767.98px)" />
+										<img src="./img/doctor-mobile.jpg" alt="doctor" />
+									</picture>
+								</div>
+								<div class="slide-content">
+									<div class="slide-overlay">
+										<picture>
+											<img src="./img/favicons/slider-overlay.png" alt="overlay" />
+										</picture>
+									</div>
+									<div class="content-checkup">
+										<h3>CHECK-UP</h3>
+										<span>для мужчин</span>
+										<ul class="check-list">
+											<li class="check-list-item">Гормональный скрининг</li>
+											<li class="check-list-item">Тестостерон</li>
+											<li class="check-list-item">Свободный тестостерон</li>
+											<li class="check-list-item">
+												Глобулин,&#160;связывающий&#160;половые гормоны
+											</li>
+										</ul>
+										<span class="price">Всего 2800₽</span>
+										<del>
+											<span>3500₽</span>
+										</del>
+									</div>
+									<div class="slide-btns">
+										<button class="btn btn-primary" data-modal>Записаться</button>
+										<button class="btn btn-ghost" data-modal>Подробнее</button>
+									</div>
+								</div>
+							</div>
+							<div class="services__slide">
+								<div class="slide-image">
+									<picture>
+										<source srcset="./img/doctor.jpg" media="(min-width: 767.98px)" />
+										<img src="./img/doctor-mobile.jpg" alt="doctor" />
+									</picture>
+								</div>
+								<div class="slide-content">
+									<div class="slide-overlay">
+										<picture>
+											<img src="./img/favicons/slider-overlay.png" alt="overlay" />
+										</picture>
+									</div>
+									<div class="content-checkup">
+										<h3>CHECK-UP</h3>
+										<span>для мужчин</span>
+										<ul class="check-list">
+											<li class="check-list-item">Гормональный скрининг</li>
+											<li class="check-list-item">Тестостерон</li>
+											<li class="check-list-item">Свободный тестостерон</li>
+											<li class="check-list-item">
+												Глобулин,&#160;связывающий&#160;половые гормоны
+											</li>
+										</ul>
+										<span class="price">Всего 2800₽</span>
+										<del>
+											<span>3500₽</span>
+										</del>
+									</div>
+									<div class="slide-btns">
+										<button class="btn btn-primary" data-modal>Записаться</button>
+										<button class="btn btn-ghost" data-modal>Подробнее</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="services__slider-counter">
+						<div class="services__slider-prev">
+							<svg class="icon icon--arrow">
+								<use href="./img/svgsprite/sprite.symbol.svg#left-arrow"></use>
+							</svg>
+						</div>
+						<span id="current">1</span>
+						/
+						<span id="total">4</span>
+						<div class="services__slider-next">
+							<svg class="icon icon--arrow">
+								<use href="./img/svgsprite/sprite.symbol.svg#right-arrow"></use>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__content">
+					<div class="footer__logo">LOGO</div>
+
+					<div class="footer__social">
+						<a class="social__item" href="https://instagram.com" target="_blank">
+							<picture>
+								<source srcset="./img/favicons/instagram.webp 1x, ./img/favicons/instagram@2x.webp 2x" type="image/webp" />
+								<source srcset="./img/favicons/instagram.png 1x, ./img/favicons/instagram@2x.png 2x" type="image/png" />
+								<img class="social__item-icon" src="./img/favicons/instagram.png" alt="instagram" />
+							</picture>
+						</a>
+						<a class="social__item" href="https://whatsapp.com" target="_blank">
+							<picture>
+								<source srcset="./img/favicons/whatsapp.webp 1x, ./img/favicons/whatsapp@2x.webp 2x" type="image/webp" />
+								<source srcset="./img/favicons/whatsapp.png 1x, ./img/favicons/whatsapp@2x.png 2x" type="image/png" />
+								<img class="social__item-icon" src="./img/favicons/whatsapp.png" alt="whatsapp" />
+							</picture>
+						</a>
+						<a class="social__item" href="https://telegram.com" target="_blank">
+							<picture>
+								<source srcset="./img/favicons/telegram.webp 1x, ./img/favicons/telegram@2x.webp 2x" type="image/webp" />
+								<source srcset="./img/favicons/telegram.png 1x, ./img/favicons/telegram@2x.png 2x" type="image/png" />
+								<img class="social__item-icon" src="./img/favicons/telegram.png" alt="telegram" />
+							</picture>
+						</a>
+					</div>
+
+					<div class="footer__nav">
+						<ul class="menu">
+							<li class="menu__item"><a href="#">О&#160;клинике</a></li>
+							<li class="menu__item"><a href="#">Услуги</a></li>
+							<li class="menu__item"><a href="#">Специалисты</a></li>
+							<li class="menu__item"><a href="#">Цены</a></li>
+							<li class="menu__item"><a href="#">Контакты</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div class="modal">
+			<div class="modal__dialog">
+				<div class="modal__content">
+					<form id="form" class="form" autocomplete="off">
+						<div class="modal__close" data-close>&#215;</div>
+						<div class="modal__title">Мы&#160;свяжемся с&#160;вами как можно быстрее!</div>
+						<div class="modal__input-box">
+							<input id="name" class="modal__input" required name="name" type="text" placeholder="Ваше имя" autocomplete="off" />
+						</div>
+						<div class="modal__input-box">
+							<input id="tel" class="modal__input" required name="tel" type="tel" placeholder="+7(___) ___-__-__" autocomplete="off" />
+						</div>
+						<div class="modal__input-box">
+							<textarea class="modal__input-inp" name="msg" id="msg" placeholder="Сообщение"></textarea>
+						</div>
+
+						<button type="submit" class="btn btn-primary">Перезвонить мне</button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<script src="./js/index.bundle.js"></script>
+	</body>
+</html>

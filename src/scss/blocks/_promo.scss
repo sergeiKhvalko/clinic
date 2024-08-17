@@ -1,0 +1,72 @@
+.promo {
+	display: flex;
+	flex-direction: column;
+
+	@include laptop {
+		flex-direction: row;
+	}
+}
+
+.promo__img {
+	img {
+		margin: 0 auto;
+	}
+
+	@include laptop {
+		order: 1;
+	}
+}
+
+.promo__info {
+	padding: 35px 15px 52px;
+	background-color: rgba(248, 251, 250, 1);
+
+	@include laptop {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		order: 0;
+	}
+
+	@include desktop {
+		flex-grow: 1;
+	}
+}
+
+.promo__wrap {
+	width: 345px;
+	margin: 0 auto;
+
+	@include laptop {
+		width: 416px;
+	}
+
+	@include desktop {
+		margin: 0 0 3px 224px;
+	}
+}
+
+.promo__title {
+	// font-family: PT Sans Caption;
+	font-size: 26px;
+	font-weight: 700;
+	line-height: 33.64px;
+	text-align: left;
+
+	@include laptop {
+		font-size: 36px;
+		line-height: 46.58px;
+	}
+}
+
+.promo__descr {
+	margin-top: 10px;
+	font-size: 14px;
+	line-height: 21px;
+
+	@include laptop {
+		margin-top: 15px;
+		font-size: 16px;
+		line-height: 24px;
+	}
+}

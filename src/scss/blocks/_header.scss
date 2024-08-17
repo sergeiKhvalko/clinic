@@ -1,0 +1,119 @@
+.header {
+	background-color: #f6f6f6;
+	padding: 14px 0;
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		@include laptop {
+			margin-bottom: 8px;
+		}
+	}
+
+	@include laptop {
+		padding: 10px 0 0;
+	}
+}
+
+.header__left,
+.header__right {
+	display: flex;
+}
+
+.header__left {
+	@include laptop {
+		margin-left: -3px;
+	}
+}
+
+.logo {
+	font-size: 14px;
+	font-weight: bold;
+	color: #0dbc91;
+}
+
+.header__address {
+	display: none;
+
+	@include laptop {
+		display: flex;
+		flex-direction: column;
+		letter-spacing: -1px;
+	}
+}
+
+.header__address :nth-child(2) {
+	padding-left: 20px;
+}
+
+.header__phone {
+	display: flex;
+	flex-direction: column;
+	padding-right: 4px;
+	font-size: 13px;
+	text-align: right;
+	color: rgba(54, 72, 68, 1);
+
+	picture {
+		margin-right: 15px;
+	}
+
+	a {
+		font-size: 16px;
+		font-weight: bold;
+		line-height: 20.7px;
+		color: rgba(54, 72, 68, 1);
+
+		@include laptop {
+			font-weight: 400;
+			margin-right: 32px;
+		}
+	}
+
+	.city {
+		@include laptop {
+			display: none;
+		}
+	}
+
+	img {
+		display: none;
+		@include laptop {
+			display: block;
+		}
+	}
+
+	@include laptop {
+		flex-direction: row;
+		align-items: center;
+	}
+}
+
+.header__btn {
+	display: none;
+	@include laptop {
+		display: block;
+	}
+}
+
+.header__nav {
+	display: none;
+	@include laptop {
+		display: block;
+		padding: 10px 0;
+		background-color: rgba(31, 161, 129, 1);
+
+		a {
+			color: #fff;
+		}
+	}
+
+	.nav__list {
+		@include laptop {
+			margin-left: -3px;
+			letter-spacing: -1px;
+		}
+	}
+}

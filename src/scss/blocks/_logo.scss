@@ -1,0 +1,8 @@
+.logo {
+	margin-right: 22px;
+	font-size: 26px;
+
+	@include laptop {
+		font-size: 38px;
+	}
+}
